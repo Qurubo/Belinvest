@@ -34,6 +34,47 @@ class Currency {
         salRUBCurrency = Double.parseDouble(rCurrency.get(1).text());
     }
 
+    public double getPurUSDCurrency() {
+        return purUSDCurrency;
+    }
+
+    public double getPurEURCurrency() {
+        return purEURCurrency;
+    }
+
+    public double getPurRUBCurrency() {
+        return purRUBCurrency;
+    }
+
+    public double getSalUSDCurrency() {
+        return salUSDCurrency;
+    }
+
+    public double getSalEURCurrency() {
+        return salEURCurrency;
+    }
+
+    public double getSalRUBCurrency() {
+        return salRUBCurrency;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    @Override
+    public String toString() {
+        return "Currency{ " +
+                "Date= '" + date+"' \n"+
+                "purUSDCurrency=" + purUSDCurrency +
+                ", salUSDCurrency=" + salUSDCurrency +"\n"+
+                "purEURCurrency=" + purEURCurrency +
+                ", salEURCurrency=" + salEURCurrency +"\n"+
+                "purRUBCurrency=" + purRUBCurrency +
+                ", salRUBCurrency=" + salRUBCurrency +
+                " }";
+    }
+
     public void info() {
         System.out.printf("%30s\n",date);
         System.out.printf("%10s %10s %10s\n","Валюта","Покупка","Продажа");
@@ -41,4 +82,5 @@ class Currency {
         System.out.printf("%10s %10.3f %10.3f\n","1 EUR",purEURCurrency,salEURCurrency);
         System.out.printf("%10s %10.3f %10.3f\n","100 RUB",purRUBCurrency,salRUBCurrency);
     }
+
 }
