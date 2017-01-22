@@ -6,6 +6,6 @@ package ru.doublekdev;
 public class CalculateException extends RuntimeException {
     public CalculateException() {
 
-        System.out.println("Please enter number between 0 - 10000");
+        System.out.println("Please enter number between 0 - +"+ "\u221E");
     }
 }
