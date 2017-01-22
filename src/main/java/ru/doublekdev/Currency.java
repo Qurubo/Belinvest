@@ -8,6 +8,7 @@ import java.io.IOException;
 
 /**
  * Created by qurub on 18.01.2017.
+ * This object contains current currency
  */
 class Currency {
     private double purUSDCurrency;
