@@ -1,13 +1,10 @@
 package ru.doublekdev;
 
-import java.io.IOException;
-
-
 public class Main {
 
     public static void main(String[] args) {
-        Calculate calculate =new Calculate();
-        calculate.calc();
+        Calculate calculate =new Calculate(Currencies.USD);
+        System.out.println(Currencies.BYN+"= "+calculate.getBYN());
 
     }
 }

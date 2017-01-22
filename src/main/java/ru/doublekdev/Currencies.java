@@ -6,5 +6,6 @@ package ru.doublekdev;
 public enum Currencies {
     RUB,
     USD,
-    EUR
+    EUR,
+    BYN
 }
