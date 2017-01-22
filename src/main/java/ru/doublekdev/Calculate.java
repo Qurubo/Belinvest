@@ -1,6 +1,7 @@
 package ru.doublekdev;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
@@ -58,6 +59,7 @@ public class Calculate {
                 BYN=curUSD*need;
                 break;
         }
+        BYN = BigDecimal.valueOf(BYN).setScale(2,BigDecimal.ROUND_CEILING).doubleValue();
     }
     public double getBYN() {
         return BYN;
