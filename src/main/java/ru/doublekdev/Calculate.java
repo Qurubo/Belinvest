@@ -12,6 +12,7 @@ public class Calculate {
     private double curRUB;
     private double BYN;
     private double need;
+    private boolean b = false;
 
     public Calculate(Currencies currencies) {
         calc(currencies);
@@ -22,8 +23,11 @@ public class Calculate {
         curUSD = currency.getSalUSDCurrency();
         curEUR = currency.getSalEURCurrency();
         curRUB = currency.getSalRUBCurrency();
-        currency.info();
-        System.out.println("\n");
+        if(b==false){
+            currency.info();
+            System.out.println("\n");
+        }
+        b=true;
         currency =null;
     }
     private void calc(Currencies currencies){
