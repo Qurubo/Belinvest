@@ -1,5 +1,7 @@
 package ru.doublekdev;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Scanner;
@@ -32,10 +34,12 @@ public class Calculate {
         currency =null;
     }
     private void calc(Currencies currencies){
-        Scanner scr =new Scanner(System.in);
+        //Console
+        //Scanner scr =new Scanner(System.in);
         try{
             start();
-            String s = scr.nextLine();
+            //String s = scr.nextLine();
+            String s = JOptionPane.showInputDialog(null,"Введите сумму","Currency USD",JOptionPane.NO_OPTION);
             need = Double.parseDouble(s);
             if (need <= 0 && need <=10000) {
                 throw new CalculateException();
